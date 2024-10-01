@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- link com css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/starbucks-favicon.png" type="image/x-icon">
+    <title>Starbucks Clone</title>
 </head>
 <body>
-    
+    <main>
+        <div class="circulo"></div>
+
+        <header>
+
+            <a href="#"><img src="assets/logo.png" alt="logo da empresa"></a>
+
+            <!-- div menu hamburger -->
+             <div class="toggle" onclick="toggleMenu();"></div>
+
+             <!-- links -->
+              <ul class="links">
+                <li><a href="https://www.starbucks.com.br" target="_blank">Home</a></li>
+                <li><a href="https://www.starbucks.com.br/menu-list" target="_blank">Menu</a></li>
+                <li><a href="https://www.starbucks.com.br/cafe" target="_blank">Novidades</a></li>
+                <li><a href="https://www.starbucks.com.br/lojas" target="_blank">Lojas</a></li>
+              </ul>
+
+        </header>
+
+        <div class="conteudo">
+            <div class="textoPrincipal">
+                <h2>Não é apenas um café
+                <br>Starbucks</h2>
+
+                <p>Descubra um mundo de sabores inesquecíveis com a Starbucks. Cada colherada é uma explosão de sabores irresistíveis que vão te conquistar</p>
+
+                <!-- botão -->
+                <a href="https://www.starbucks.com.br" target="_blank"></a>
+
+                <!-- imagem do copo -->
+                 <div class="imgBox"><img src="assets/img1.png" alt="copo" class="starbucks"></div>
+            </div>
+        </div>
+
+        <!-- imagem copo pequeno -->
+         <ul class="sorvetes">
+            <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img3.png'); changeCircleColor('#d752b1')"></li>
+         </ul>
+
+         <ul class="sociais">
+            
+         </ul>
+
+    </main>
 </body>
 </html>
